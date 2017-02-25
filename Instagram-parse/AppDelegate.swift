@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse 
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             configuration.applicationId = "derrick-instagram-id"
             configuration.server = "http://instagram-parse-derrick.herokuapp.com/parse"
         }))
+        
+        // if there is a logged in user then load the home view controller
+        if PFUser.current() != nil {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "MainFeedNavigationController")
+            window?.rootViewController = vc            
+        }
+        
+        //attach observer for going back to login view.
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: MainFeedViewController.userDidLogutNotification ), object: nil, queue: OperationQueue.main) { (Notification) in
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateInitialViewController()
+            self.window?.rootViewController = vc
+        }
+
+        
+        
         return true
     }
 

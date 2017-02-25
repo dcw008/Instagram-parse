@@ -30,7 +30,6 @@ class LoginViewController: UIViewController {
         
         let username = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
-        var isSuccessful = false;
         PFUser.logInWithUsername(inBackground: username, password: password) {
             (user: PFUser?, error: Error?) -> Void in
             if user != nil {
@@ -60,6 +59,7 @@ class LoginViewController: UIViewController {
                 print(error.localizedDescription)
             } else {
                 print("User Registered successfully")
+                self.performSegue(withIdentifier: "LoginSegue", sender: nil)
                 // set boolean to true
             }
         }
