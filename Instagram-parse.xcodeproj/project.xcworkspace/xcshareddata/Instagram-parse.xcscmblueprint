@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E1BF12405CCEC62AE3E6E3072DD4AC57243EA720",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E1BF12405CCEC62AE3E6E3072DD4AC57243EA720" : 9223372036854775807,
+    "103F2508917973CC7BC3FC00FB956D77824FC0D0" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D32AE63C-8B32-42DA-A233-E599B54E2022",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E1BF12405CCEC62AE3E6E3072DD4AC57243EA720" : "Instagram-parse\/",
+    "103F2508917973CC7BC3FC00FB956D77824FC0D0" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Instagram-parse",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Instagram-parse.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dcw008\/twitter-clone.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "103F2508917973CC7BC3FC00FB956D77824FC0D0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dcw008\/Instagram-parse.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E1BF12405CCEC62AE3E6E3072DD4AC57243EA720"
+    }
+  ]
+}
