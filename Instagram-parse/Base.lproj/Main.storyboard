@@ -87,55 +87,88 @@
                     <connections>
                         <outlet property="emailTextField" destination="zo4-yL-yhn" id="fH1-ln-G9x"/>
                         <outlet property="passwordTextField" destination="N7d-dU-mQB" id="Aal-dd-nhj"/>
-                        <segue destination="ONP-af-dXU" kind="presentation" identifier="LoginSegue" id="TAO-lD-sag"/>
+                        <segue destination="VXn-u3-0fg" kind="show" identifier="LoginSegue" id="L1x-1L-hDk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
-        <!--Main Feed View Controller-->
-        <scene sceneID="cCy-LC-Fji">
+        <!--Item-->
+        <scene sceneID="DBl-SW-iHt">
             <objects>
-                <viewController storyboardIdentifier="MainFeedViewController" id="ZWW-ie-wzw" customClass="MainFeedViewController" customModule="Instagram_parse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="H6h-FJ-vUw" customClass="ProfileViewController" customModule="Instagram_parse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="AWn-6P-E6N"/>
-                        <viewControllerLayoutGuide type="bottom" id="tPK-rc-Ra3"/>
+                        <viewControllerLayoutGuide type="top" id="zkL-VF-M2c"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pvr-ko-ypz"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wNH-Zp-KcR">
+                    <view key="view" contentMode="scaleToFill" id="dYo-vB-FWX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2HC-Vk-HNc">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="K3e-mr-0N8">
-                            <connections>
-                                <action selector="onLogout:" destination="ZWW-ie-wzw" id="qnh-zl-uEd"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <tabBarItem key="tabBarItem" title="Item" id="mbT-4Z-DDN"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CFa-ks-BZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J8r-8g-TUy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1780" y="36.431784107946029"/>
+            <point key="canvasLocation" x="1142" y="931"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="32X-So-dQL">
+        <!--Item 2-->
+        <scene sceneID="qFe-LY-obT">
             <objects>
-                <navigationController storyboardIdentifier="MainFeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="ONP-af-dXU" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="efd-hk-3db">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ZWW-ie-wzw" kind="relationship" relationship="rootViewController" id="9f6-tk-93L"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Va6-OP-TE7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="F9o-mx-e1e" customClass="UploadViewController" customModule="Instagram_parse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dGc-kv-LBJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="HBJ-P5-HUb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iZC-65-SeB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="iEW-sx-Pf5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a32-kr-5t4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="927" y="-33"/>
+            <point key="canvasLocation" x="1985" y="544"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="Tix-yp-bp9">
+            <objects>
+                <viewController id="1D6-DU-GvK" customClass="FeedViewController" customModule="Instagram_parse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Fq-WV-QFU"/>
+                        <viewControllerLayoutGuide type="bottom" id="1lD-9M-K97"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dOi-19-pvq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="jNj-Up-vJN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUl-D1-1FR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2047" y="-273"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="pKu-Lo-R1W">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="VXn-u3-0fg" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="uKU-0z-yYK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1D6-DU-GvK" kind="relationship" relationship="viewControllers" id="YDP-0v-Obz"/>
+                        <segue destination="F9o-mx-e1e" kind="relationship" relationship="viewControllers" id="MRH-4H-qR4"/>
+                        <segue destination="H6h-FJ-vUw" kind="relationship" relationship="viewControllers" id="IQz-ya-XZk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h5c-FM-4BA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070" y="37"/>
         </scene>
     </scenes>
 </document>

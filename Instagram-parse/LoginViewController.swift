@@ -37,7 +37,7 @@ class LoginViewController: UIViewController {
                 //isSuccessful = true
                 self.performSegue(withIdentifier: "LoginSegue", sender: nil)
             } else {
-                print(error?.localizedDescription)
+                print(error!.localizedDescription)
             }
         }
 

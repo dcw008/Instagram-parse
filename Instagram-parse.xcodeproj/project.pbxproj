@@ -12,7 +12,9 @@
 		4C2891571E60C8EF00638743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2891561E60C8EF00638743 /* Assets.xcassets */; };
 		4C28915A1E60C8EF00638743 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2891581E60C8EF00638743 /* LaunchScreen.storyboard */; };
 		4C2891621E60D04A00638743 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2891611E60D04A00638743 /* LoginViewController.swift */; };
-		4C50A1901E61A2060036A38B /* MainFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C50A18F1E61A2060036A38B /* MainFeedViewController.swift */; };
+		4C50A1921E628A2C0036A38B /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C50A1911E628A2C0036A38B /* UploadViewController.swift */; };
+		4C50A1941E628A380036A38B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C50A1931E628A380036A38B /* ProfileViewController.swift */; };
+		4C50A1961E628F1A0036A38B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C50A1951E628F1A0036A38B /* FeedViewController.swift */; };
 		E65C5F500606DEAA72904CA7 /* Pods_Instagram_parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD2791EEC77E77E3D8FC88A /* Pods_Instagram_parse.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +26,9 @@
 		4C2891591E60C8EF00638743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C28915B1E60C8EF00638743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C2891611E60D04A00638743 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		4C50A18F1E61A2060036A38B /* MainFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFeedViewController.swift; sourceTree = "<group>"; };
+		4C50A1911E628A2C0036A38B /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		4C50A1931E628A380036A38B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4C50A1951E628F1A0036A38B /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		6F7CD47BF89F203CD61E64A4 /* Pods-Instagram-parse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram-parse.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram-parse/Pods-Instagram-parse.release.xcconfig"; sourceTree = "<group>"; };
 		CBD2791EEC77E77E3D8FC88A /* Pods_Instagram_parse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram_parse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08C92742509B879499FC300 /* Pods-Instagram-parse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram-parse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram-parse/Pods-Instagram-parse.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,7 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				4C2891611E60D04A00638743 /* LoginViewController.swift */,
-				4C50A18F1E61A2060036A38B /* MainFeedViewController.swift */,
+				4C50A1911E628A2C0036A38B /* UploadViewController.swift */,
+				4C50A1931E628A380036A38B /* ProfileViewController.swift */,
+				4C50A1951E628F1A0036A38B /* FeedViewController.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -223,7 +229,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2891621E60D04A00638743 /* LoginViewController.swift in Sources */,
-				4C50A1901E61A2060036A38B /* MainFeedViewController.swift in Sources */,
+				4C50A1921E628A2C0036A38B /* UploadViewController.swift in Sources */,
+				4C50A1941E628A380036A38B /* ProfileViewController.swift in Sources */,
+				4C50A1961E628F1A0036A38B /* FeedViewController.swift in Sources */,
 				4C2891501E60C8EF00638743 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

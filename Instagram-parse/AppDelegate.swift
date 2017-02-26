@@ -25,16 +25,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // if there is a logged in user then load the home view controller
         if PFUser.current() != nil {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "MainFeedNavigationController")
+            let vc = storyboard.instantiateViewController(withIdentifier: "TabBarController")
             window?.rootViewController = vc            
         }
         
-        //attach observer for going back to login view.
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: MainFeedViewController.userDidLogutNotification ), object: nil, queue: OperationQueue.main) { (Notification) in
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateInitialViewController()
-            self.window?.rootViewController = vc
-        }
+//        //attach observer for going back to login view.
+//        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: MainFeedViewController.userDidLogutNotification ), object: nil, queue: OperationQueue.main) { (Notification) in
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let vc = storyboard.instantiateInitialViewController()
+//            self.window?.rootViewController = vc
+//        }
 
         
         

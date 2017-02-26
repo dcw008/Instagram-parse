@@ -1,5 +1,5 @@
 //
-//  MainFeedViewController.swift
+//  ProfileViewController.swift
 //  Instagram-parse
 //
 //  Created by Derrick Wong on 2/25/17.
@@ -7,11 +7,8 @@
 //
 
 import UIKit
-import Parse
 
-class MainFeedViewController: UIViewController {
-    
-    static var userDidLogutNotification = "userDidLogout"
+class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,17 +32,4 @@ class MainFeedViewController: UIViewController {
     }
     */
 
-    @IBAction func onLogout(_ sender: Any) {
-        // log the user out
-        PFUser.logOutInBackground(block: { (error: Error?) -> Void in
-            if let error = error {
-                print(error.localizedDescription)
-            } else {
-                //call observer to go back to log in
-                NotificationCenter.default.post(name: NSNotification.Name(rawValue: MainFeedViewController.userDidLogutNotification), object: nil )
-            }
-        })
-        
-    }
-    
 }
