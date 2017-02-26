@@ -127,24 +127,82 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lp-W7-Odb">
-                                <rect key="frame" x="140" y="174" width="94" height="30"/>
-                                <state key="normal" title="Tap to upload"/>
+                                <rect key="frame" x="92" y="552" width="48" height="30"/>
+                                <state key="normal" title="Library"/>
                                 <connections>
                                     <action selector="onUploadButton:" destination="F9o-mx-e1e" eventType="touchUpInside" id="47j-uE-Jsl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbD-kq-WT4">
+                                <rect key="frame" x="234" y="552" width="55" height="30"/>
+                                <state key="normal" title="Capture"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fG2-oi-B7o">
+                                <rect key="frame" x="16" y="28" width="343" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="C2x-ez-JUi"/>
+                                    <constraint firstAttribute="height" constant="236" id="IPo-rg-Ecp"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fEZ-u4-pkW">
+                                <rect key="frame" x="16" y="326" width="343" height="137"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Kz6-LA-I7X"/>
+                                    <constraint firstAttribute="height" constant="137" id="vfK-gA-1SU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caption:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHq-Tr-BtS">
+                                <rect key="frame" x="16" y="290" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIL-5a-vrs">
+                                <rect key="frame" x="92" y="552" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Library"/>
+                                <connections>
+                                    <action selector="onUploadButton:" destination="F9o-mx-e1e" eventType="touchUpInside" id="KZc-sD-grS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyW-wl-tj2">
+                                <rect key="frame" x="233" y="552" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Capture"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfl-mi-iSw">
+                                <rect key="frame" x="169" y="487" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4lp-W7-Odb" firstAttribute="top" secondItem="dGc-kv-LBJ" secondAttribute="bottom" constant="154" id="4ag-VH-JuO"/>
-                            <constraint firstItem="4lp-W7-Odb" firstAttribute="leading" secondItem="iZC-65-SeB" secondAttribute="leadingMargin" constant="124" id="enp-hl-lEx"/>
+                            <constraint firstItem="HBJ-P5-HUb" firstAttribute="top" secondItem="SbD-kq-WT4" secondAttribute="bottom" constant="36" id="1GY-fE-oLq"/>
+                            <constraint firstItem="iHq-Tr-BtS" firstAttribute="top" secondItem="fG2-oi-B7o" secondAttribute="bottom" constant="26" id="7Wz-ke-p6z"/>
+                            <constraint firstItem="fEZ-u4-pkW" firstAttribute="top" secondItem="iHq-Tr-BtS" secondAttribute="bottom" constant="15" id="M2J-Fe-BUA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SbD-kq-WT4" secondAttribute="trailing" constant="70" id="Nlk-G6-JBh"/>
+                            <constraint firstItem="HBJ-P5-HUb" firstAttribute="top" secondItem="4lp-W7-Odb" secondAttribute="bottom" constant="36" id="Pel-ol-Uvu"/>
+                            <constraint firstItem="fG2-oi-B7o" firstAttribute="top" secondItem="dGc-kv-LBJ" secondAttribute="bottom" constant="8" id="ZDt-Hn-DIf"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="fG2-oi-B7o" secondAttribute="leading" id="a9a-dw-yyL"/>
+                            <constraint firstItem="Wfl-mi-iSw" firstAttribute="leading" secondItem="iZC-65-SeB" secondAttribute="leadingMargin" constant="153" id="eAq-Ay-6Ru"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="fEZ-u4-pkW" secondAttribute="leading" id="f9N-w0-2Vd"/>
+                            <constraint firstItem="Wfl-mi-iSw" firstAttribute="top" secondItem="fEZ-u4-pkW" secondAttribute="bottom" constant="24" id="hj0-hA-FI7"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="iHq-Tr-BtS" secondAttribute="leading" id="qub-75-FAt"/>
+                            <constraint firstItem="4lp-W7-Odb" firstAttribute="leading" secondItem="iZC-65-SeB" secondAttribute="leadingMargin" constant="76" id="vBA-5x-heb"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="iEW-sx-Pf5"/>
+                    <connections>
+                        <outlet property="captionField" destination="fEZ-u4-pkW" id="bg8-F8-DN5"/>
+                        <outlet property="previewImage" destination="fG2-oi-B7o" id="0WX-PL-xZL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a32-kr-5t4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1985" y="544"/>
+            <point key="canvasLocation" x="1984.8" y="542.87856071964018"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="Tix-yp-bp9">
