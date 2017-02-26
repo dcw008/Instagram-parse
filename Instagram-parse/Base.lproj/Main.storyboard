@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -113,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="1142" y="931"/>
         </scene>
-        <!--Item 2-->
+        <!--Upload-->
         <scene sceneID="qFe-LY-obT">
             <objects>
-                <viewController id="F9o-mx-e1e" customClass="UploadViewController" customModule="Instagram_parse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Upload" id="F9o-mx-e1e" customClass="UploadViewController" customModule="Instagram_parse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dGc-kv-LBJ"/>
                         <viewControllerLayoutGuide type="bottom" id="HBJ-P5-HUb"/>
@@ -124,7 +125,20 @@
                     <view key="view" contentMode="scaleToFill" id="iZC-65-SeB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lp-W7-Odb">
+                                <rect key="frame" x="140" y="174" width="94" height="30"/>
+                                <state key="normal" title="Tap to upload"/>
+                                <connections>
+                                    <action selector="onUploadButton:" destination="F9o-mx-e1e" eventType="touchUpInside" id="47j-uE-Jsl"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4lp-W7-Odb" firstAttribute="top" secondItem="dGc-kv-LBJ" secondAttribute="bottom" constant="154" id="4ag-VH-JuO"/>
+                            <constraint firstItem="4lp-W7-Odb" firstAttribute="leading" secondItem="iZC-65-SeB" secondAttribute="leadingMargin" constant="124" id="enp-hl-lEx"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="iEW-sx-Pf5"/>
                 </viewController>
