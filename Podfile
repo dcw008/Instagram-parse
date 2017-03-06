@@ -6,5 +6,5 @@ target 'Instagram-parse' do
 
   # Pods for Flicks
 pod 'Parse'
-
+pod 'ParseUI'
 end

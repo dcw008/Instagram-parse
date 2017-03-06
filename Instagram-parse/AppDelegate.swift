@@ -29,12 +29,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.rootViewController = vc            
         }
         
-//        //attach observer for going back to login view.
-//        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: MainFeedViewController.userDidLogutNotification ), object: nil, queue: OperationQueue.main) { (Notification) in
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let vc = storyboard.instantiateInitialViewController()
-//            self.window?.rootViewController = vc
-//        }
+        //attach observer for going back to login view.
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: ProfileViewController.userDidLogutNotification ), object: nil, queue: OperationQueue.main) { (Notification) in
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateInitialViewController()
+            self.window?.rootViewController = vc
+        }
 
         
         
