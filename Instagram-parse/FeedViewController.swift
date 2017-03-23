@@ -55,6 +55,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let query = PFQuery(className: "Post")
         //order the elements
         query.order(byDescending: "createdAt")
+        //limit to 20 posts
+        query.limit = 20
         
         query.findObjectsInBackground {
             (objects: [PFObject]?, error: Error?) -> Void in
