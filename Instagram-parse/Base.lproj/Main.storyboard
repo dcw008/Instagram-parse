@@ -159,7 +159,6 @@
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fEZ-u4-pkW">
                                 <rect key="frame" x="16" y="326" width="343" height="137"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="Kz6-LA-I7X"/>
                                     <constraint firstAttribute="height" constant="137" id="vfK-gA-1SU"/>
@@ -185,6 +184,9 @@
                                 <rect key="frame" x="233" y="552" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <connections>
+                                    <action selector="onCaptureButton:" destination="F9o-mx-e1e" eventType="touchUpInside" id="0pX-5I-gfI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfl-mi-iSw">
                                 <rect key="frame" x="169" y="487" width="37" height="30"/>
@@ -244,7 +246,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="403"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7MS-Wf-g0x" id="mj9-8n-eec">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="402"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="402.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ula-UM-u0f" customClass="PFImageView">

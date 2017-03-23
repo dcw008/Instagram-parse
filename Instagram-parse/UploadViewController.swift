@@ -58,6 +58,24 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         self.present(vc, animated: true, completion: nil)
     }
     
+    //when capture button is clicked
+    @IBAction func onCaptureButton(_ sender: Any) {
+        //user will be prompted to choose a photo
+        let vc = UIImagePickerController()
+        vc.delegate = self
+        vc.allowsEditing = true
+        
+        //only use camera if available
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            vc.sourceType = .camera
+        } else {
+            //otherwise, use the photo library
+            vc.sourceType = .photoLibrary
+        }
+        
+        self.present(vc, animated: true, completion: nil)
+    }
+    
     //resize the image
     func resize(image: UIImage, newSize: CGSize) -> UIImage {
         let resizeImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height))
